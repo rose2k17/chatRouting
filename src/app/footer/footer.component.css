@@ -1,6 +1,12 @@
 .blog-footer {
     padding: 1rem 0;
     color: #999;
-    text-align: center;
     border-top: .05rem solid #e5e5e5;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.encima {
+    z-index: 50;
 }

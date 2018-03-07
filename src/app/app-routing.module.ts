@@ -44,7 +44,8 @@ const routes: Routes = [
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)],
+    RouterModule.forRoot(routes),
+  ],
   exports: [RouterModule],
   declarations: [
     HomeComponent,
@@ -52,5 +53,6 @@ const routes: Routes = [
     ServiciosComponent,
     ContactoComponent
   ]
+
 })
 export class AppRoutingModule { }
