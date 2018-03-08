@@ -6,19 +6,17 @@
   <h1>Blog</h1>
   <div class="container py-3">
     <div class="card">
-      <div class="row ">
+      <div class="row"  *ngFor="let blog of blogs">
         <div class="col-md-8 px-3">
-          <div class="card-block px-3" *ngFor="let blog of blogs">
-            <h4 class="card-title">{{ blog.titulo }} Card title</h4>
-            <h6 class="card-subtitle mb-2 text-muted">{{ blog.tema }} Card subtitle</h6>
-            <p class="card-text">{{ blog.descripcion }} Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+          <div class="card-block px-3">
+            <h4 class="card-title">{{ blog.titulo }}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{ blog.tema }}</h6>
+            <p class="card-text">{{ blog.descripcion }}</p>
             <a href="#" class="btn btn-primary">Read More</a>
           </div>
         </div>
         <div class="col-md-4">
-          <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100">
+          <img src="{{ blog.imagen }}" class="w-100">
         </div>
       </div>
     </div>

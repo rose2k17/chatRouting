@@ -5,9 +5,10 @@ var BlogSchema = new mongoose.Schema({
   titulo: String,
   tema: String,
   descripcion: String,
+  imagen: String,
   //published_year: String,
   //publisher: String,
-  fecha: Date,
+  fecha: String,
 });
 
 module.exports = mongoose.model('Blog', BlogSchema);
