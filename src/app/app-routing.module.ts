@@ -9,9 +9,12 @@ import { BlogComponent } from './blog/blog.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
+import { InsertarComponent } from './insertar/insertar.component';
+
+
 const routes: Routes = [
   {
-    path: 'blog',
+    path: 'blogs',
     component: BlogComponent,
     data: { title: 'Book List' }
 
@@ -22,7 +25,7 @@ const routes: Routes = [
     data: { title: 'Book List' }
   },
   {
-    path: 'contacto',
+    path: 'contactos',
     component: ContactoComponent,
     data: { title: 'Contact List' }
   },
@@ -30,6 +33,12 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     data: { title: 'Home List' }
+
+  },
+  {
+    path: 'insertar',
+    component: InsertarComponent,
+    data: { title: 'insertar' }
 
   },
   {
@@ -44,8 +53,7 @@ const routes: Routes = [
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
-  ],
+    RouterModule.forRoot(routes)],
   exports: [RouterModule],
   declarations: [
     HomeComponent,
@@ -53,6 +61,5 @@ const routes: Routes = [
     ServiciosComponent,
     ContactoComponent
   ]
-
 })
 export class AppRoutingModule { }

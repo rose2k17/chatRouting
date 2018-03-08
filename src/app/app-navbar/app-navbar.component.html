@@ -1,18 +1,21 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+    aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item p-3 active">
-        <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/home">Home
+          <span class="sr-only">(current)</span>
+        </a>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link" [routerLink]="['/blog']" >Blog</a>
+        <a class="nav-link" routerLink="/blogs">Blog</a>
       </li>
       <li class="nav-item dropdown p-3" ngbDropdown>
-        <a class="nav-link dropdown-toggle" id="dropdown01" [routerLink]="['/servicios']" ngbDropdownToggle>Servicios</a>
+        <a class="nav-link dropdown-toggle" id="dropdown01" routerLink="/servicios" ngbDropdownToggle>Servicios</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01" ngbDropdownMenu>
           <a class="dropdown-item" href="#">Prueba</a>
           <a class="dropdown-item" href="#">Prueba1</a>
@@ -20,7 +23,10 @@
         </div>
       </li>
       <li class="nav-item p-3">
-        <a class="nav-link" [routerLink]="['/contacto']" >Contacto</a>
+        <a class="nav-link" routerLink="/contactos">Contacto</a>
+      </li>
+      <li class="nav-item p-3">
+        <a class="nav-link" routerLink="/insertar">insertar</a>
       </li>
     </ul>
   </div>

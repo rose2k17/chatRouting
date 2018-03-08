@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ChatRrouting</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+    //Set default open/close settings
+    var divs=$('.accordion>div').hide(); //Hide/close all containers
+    var h2s=$('.accordion>h2').click(function () {
+        h2s.not(this).removeClass('active')
+        $(this).toggleClass('active')
+        divs.not($(this).next()).slideUp()
+        $(this).next().slideToggle()
+        return false; //Prevent the browser jump to the link anchor
+    });
+});
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+</html>
